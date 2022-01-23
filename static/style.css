@@ -1,0 +1,58 @@
+BODY {
+  background-color: #6b8fd4;
+  color: #2a180e;
+}
+
+INPUT,
+BUTTON {
+  background-color: #4575d4;
+}
+
+LABEL {
+  cursor: pointer;
+}
+
+H1 {
+  text-align: center;
+  color: #2a180e;
+}
+
+UL {
+  list-style-type: none;
+}
+
+.header {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.display {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+}
+
+.upload {
+  background-color: #4575d4;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.upload .controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.listing .controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#fileUpload,
+#uploadSuccess {
+  display: none;
+}
