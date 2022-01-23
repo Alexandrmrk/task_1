@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTTP Server Test</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="/js/index.js"></script>
+  </head>
+  <body>
+    <div class="display">
+      <div class="upload">
+        <div class="controls">
+          <label for="fileUpload" id="lblUpload"
+            >Нажмите здесь, чтобы выбрать файл для загрузки...</label
+          >
+          <button id="btnUpload" onclick="doUpload()" disabled>
+            Загрузить
+          </button>
+        </div>
+        <input type="file" id="fileUpload" onchange="fileSelected()" />
+        <div id="uploadSuccess">Uploaded</div>
+      </div>
+      <div class="listing">
+        <div class="header">Файлы на сервере</div>
+        <div class="controls">
+          <button id="btnList" onclick="doList()">Список Файлов</button>
+          <button id="btnRemove" onclick="doRemove()" disabled>
+            Удалить выбранные
+          </button>
+        </div>
+        <ul id="displayEvents"></ul>
+      </div>
+    </div>
+  </body>
+</html>
